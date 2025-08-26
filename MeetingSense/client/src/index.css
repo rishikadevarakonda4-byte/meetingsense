@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(220, 14%, 4%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 14%, 4%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(220, 14%, 4%);
+  --primary: hsl(22, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(220, 14%, 96%);
+  --secondary-foreground: hsl(220, 9%, 46%);
+  --muted: hsl(220, 14%, 96%);
+  --muted-foreground: hsl(220, 9%, 46%);
+  --accent: hsl(220, 14%, 96%);
+  --accent-foreground: hsl(220, 9%, 46%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --ring: hsl(22, 100%, 50%);
+  --radius: 0.5rem;
+  --pwc-orange: hsl(22, 100%, 50%);
+  --pwc-navy: hsl(224, 100%, 10%);
+  --pwc-blue: hsl(200, 100%, 38%);
+  --pwc-gray: hsl(0, 0%, 46%);
+  --pwc-light: hsl(0, 0%, 96%);
+  --font-inter: 'Inter', sans-serif;
+}
+
+.dark {
+  --background: hsl(220, 14%, 4%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(220, 14%, 4%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(220, 14%, 4%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(22, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(220, 14%, 8%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: hsl(220, 14%, 8%);
+  --muted-foreground: hsl(220, 9%, 65%);
+  --accent: hsl(220, 14%, 8%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(220, 14%, 18%);
+  --input: hsl(220, 14%, 18%);
+  --ring: hsl(22, 100%, 50%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+  }
+}
+
+.pwc-orange {
+  color: var(--pwc-orange);
+}
+
+.bg-pwc-orange {
+  background-color: var(--pwc-orange);
+}
+
+.border-pwc-orange {
+  border-color: var(--pwc-orange);
+}
+
+.text-pwc-navy {
+  color: var(--pwc-navy);
+}
+
+.bg-pwc-navy {
+  background-color: var(--pwc-navy);
+}
+
+.text-pwc-blue {
+  color: var(--pwc-blue);
+}
+
+.bg-pwc-blue {
+  background-color: var(--pwc-blue);
+}
+
+.text-pwc-gray {
+  color: var(--pwc-gray);
+}
+
+.bg-pwc-gray {
+  background-color: var(--pwc-gray);
+}
+
+.bg-pwc-light {
+  background-color: var(--pwc-light);
+}
+
+.hover\:bg-pwc-orange:hover {
+  background-color: var(--pwc-orange);
+}
+
+.hover\:text-pwc-navy:hover {
+  color: var(--pwc-navy);
+}
+
+.hover\:border-pwc-orange:hover {
+  border-color: var(--pwc-orange);
+}

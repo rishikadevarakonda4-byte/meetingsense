@@ -1,0 +1,129 @@
+Project Name: Meeting Video to BRD Generator
+Purpose: Develop an application that allows users to upload recorded business meeting videos, process the audio and content, and automatically generate a structured Business Requirements Document (BRD) summarizing the business ideas discussed.
+
+2. Goals and Objectives
+
+Enable users to upload recorded video meetings.
+
+Extract and transcribe audio from the video.
+
+Process the transcript to identify key business requirements and ideas.
+
+Automatically generate a structured and editable BRD document.
+
+Provide download and sharing options for the generated BRD.
+
+3. Scope
+
+In Scope:
+
+Video upload and storage.
+
+Audio extraction and speech-to-text transcription.
+
+Natural Language Processing (NLP) to parse and extract requirements.
+
+BRD generation in a structured format (e.g., PDF, DOCX).
+
+User interface for upload, viewing, and downloading BRD.
+
+Out of Scope:
+
+Real-time meeting transcription.
+
+Integration with external project management tools (initially).
+
+4. Primary Users
+
+Business analysts
+
+Product managers
+
+Project managers
+
+Entrepreneurs and startup founders
+
+5. Functional Requirements and Step-by-Step Flow
+5.1 User Registration and Login (Optional for advanced versions)
+
+Allow users to create accounts and log in.
+
+Preserve user data securely.
+
+5.2 Video Upload
+
+User selects video file (e.g., MP4, MOV) from device.
+
+Upload video to the system.
+
+Validate file size and format.
+
+5.3 Audio Extraction
+
+Extract audio track from uploaded video.
+
+Convert audio to a standard format (e.g., WAV).
+
+5.4 Speech-to-Text Transcription
+
+Use a speech-to-text engine (like Google Speech-to-Text, Whisper, or AssemblyAI).
+
+Convert audio content into raw text transcript.
+
+5.5 Text Processing & NLP
+
+Use NLP to parse transcript.
+
+Identify sections like Goals, Scope, Stakeholders, Requirements, Constraints.
+
+Extract user intentions and actionable business requirements.
+
+5.6 BRD Generation
+
+Automatically structure the extracted info into a template:
+
+Title Page, Project Overview, Business Objectives, Scope, Requirements (Functional & Non-functional), Stakeholders, Constraints & Assumptions.
+
+Format the document (PDF or DOCX).
+
+5.7 Review & Edit
+
+Allow the user to preview the BRD.
+
+Provide editing capabilities (optional initial version: download only).
+
+5.8 Download & Share
+
+Allow the user to download the BRD.
+
+Optionally, share via email or cloud services (future enhancement).
+
+6. Non-Functional Requirements
+
+Support videos up to [X] minutes or size limit.
+
+Reasonable turnaround time (transcription within a few minutes).
+
+Secure file handling with privacy.
+
+Scalable for multiple concurrent users.
+
+Intuitive and responsive UI.
+
+7. Technology Stack Suggestions
+
+Frontend: React.js
+
+Backend: Node.js with Express
+
+Storage: local filesystem
+
+Speech-to-text API: OpenAI Whisper, Google Cloud Speech API, AssemblyAI
+
+NLP: Hugging Face transformers or spaCy
+
+Document Generation: pdfkit, docx, or similar libraries
+
+Deployment: Replit supports Node.js apps, or Python Flask apps
+
+The BRD has been provided here. Main use case is to extract audio files from videos and generate BRD in the right format. The front end should be in React TypeScript. Use PwC brand colours and make the theme light. For the LLM model use Gemini 2.5.
